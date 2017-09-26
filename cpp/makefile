@@ -10,8 +10,8 @@ run: all
 
 all: test
 
-test: test.o atbash.o rot.o morse.o utils.o
-	$(CC) $(LFLAGS) test.o atbash.o rot.o morse.o utils.o -o test
+test: test.o utils.o atbash.o rot.o morse.o keyword.o
+	$(CC) $(LFLAGS) test.o utils.o atbash.o rot.o morse.o keyword.o -o test
 
 test.o: test.cpp ciphers.h utils.h
 	$(CC) $(CFLAGS) test.cpp
@@ -27,6 +27,9 @@ rot.o: rot.cpp
 
 morse.o: morse.cpp
 	$(CC) $(CFLAGS) morse.cpp
+
+keyword.o: keyword.cpp utils.h
+	$(CC) $(CFLAGS) keyword.cpp
 
 clean:
 	rm -f test
