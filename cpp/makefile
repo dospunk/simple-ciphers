@@ -5,6 +5,7 @@ CFLAGS = -c -Wall -std=c++14 -g -O0 -pedantic-errors
 CC = g++
 
 run: all
+	echo "running..."
 	./test
 
 all: test
