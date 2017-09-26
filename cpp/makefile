@@ -7,15 +7,17 @@ CC = g++
 run: all
 	echo "running..."
 	./test
-	make clean
 
 all: test
 
-test: test.o atbash.o rot.o morse.o
-	$(CC) $(LFLAGS) test.o atbash.o rot.o morse.o -o test
+test: test.o atbash.o rot.o morse.o utils.o
+	$(CC) $(LFLAGS) test.o atbash.o rot.o morse.o utils.o -o test
 
-test.o: test.cpp ciphers.h
+test.o: test.cpp ciphers.h utils.h
 	$(CC) $(CFLAGS) test.cpp
+
+utils.o: utils.cpp
+	$(CC) $(CFLAGS) utils.cpp
 
 atbash.o: atbash.cpp
 	$(CC) $(CFLAGS) atbash.cpp
