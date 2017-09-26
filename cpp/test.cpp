@@ -16,7 +16,7 @@ int main() {
 	cout << "Rot7: Hel.lo -> " << rot("Hel.lo", 7) << endl;
 	assert(!bool(rot("H-e-l-l-o").compare("U-r-y-y-b")));
 	cout << "Rot13: H-e-l-l-o -> " << rot("H-e-l-l-o") << endl;
-	assert(!bool(morse("Whoa .-").compare(".-- .... --- .- / period dash ")));
-	cout << "Morse Code: 'Whoa .-' -> " << morse("Whoa .-") << endl;
+	assert(!bool(morse("Whoa .-/").compare(".-- .... --- .- / period dash forwardslash ")));
+	cout << "Morse Code: 'Whoa .-/' -> " << morse("Whoa .-/") << endl;
 	return 0;
 }

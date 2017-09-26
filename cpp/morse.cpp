@@ -5,11 +5,11 @@
 using namespace std;
 
 string morse(string str){
-	string alpha = "abcdefghijklmnopqrstuvwqyz .-";
+	string alpha = "abcdefghijklmnopqrstuvwqyz .-/";
 	string morse[] = {".-","-...","-.-.","-..", ".", "..-.", "--.", "....",
 					  "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.",
 					  "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-",
-					  "-.--", "--..", "/", "period", "dash"};
+					  "-.--", "--..", "/", "period", "dash", "forwardslash"};
 	string output;
 	string::iterator iter;
 	for(iter = str.begin(); iter < str.end(); ++iter){
