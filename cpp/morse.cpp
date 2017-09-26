@@ -1,4 +1,4 @@
-//Thanks very much to http://www.dreamincode.net/forums/topic/155153-morse-code-translator/
+//Many thanks to http://www.dreamincode.net/forums/topic/155153-morse-code-translator/
 
 #include<string>
 
