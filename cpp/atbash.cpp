@@ -11,7 +11,7 @@ string atbash(string str){
 		} else if ((*iter >= 'a') && (*iter <= 'z')) { //if character is lowercase
 			output += char(('a'+'z')-*iter);
 		} else { //if character isn't a letter
-			output += char(*iter);
+			output += *iter;
 		}
 	}
 	return output;
