@@ -6,3 +6,4 @@ Implementations of simple ciphers in multiple languages
 - atbash
 - Rot-n
 - Morse Code
+- Keyword Cipher
