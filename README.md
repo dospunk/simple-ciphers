@@ -3,7 +3,11 @@ Implementations of simple ciphers in multiple languages
 
 ## C++
 
-- atbash
+- Atbash
 - Rot-n
 - Morse Code
 - Keyword Cipher
+
+## Rust
+
+- Rot-n
