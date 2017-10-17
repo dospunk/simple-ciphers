@@ -4,11 +4,11 @@ LFLAGS = -Wall
 CFLAGS = -c -Wall -std=c++14 -g -O0 -pedantic-errors
 CC = g++
 
-run: all
-	echo "running..."
-	./test
-
 all: test
+
+run: all
+	echo "Testing C++ ciphers"
+	./test
 
 test: test.o utils.o atbash.o rot.o morse.o keyword.o
 	$(CC) $(LFLAGS) test.o utils.o atbash.o rot.o morse.o keyword.o -o test
