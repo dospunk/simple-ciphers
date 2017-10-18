@@ -1,7 +1,8 @@
 #include <algorithm>
 #include <string>
 
-using namespace std;
+using std::string;
+using std::transform;
 
 string filter(string str, string filter){
 	string output;

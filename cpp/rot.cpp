@@ -1,6 +1,6 @@
 #include<string>
 
-using namespace std;
+using std::string;
 
 string rot(string str, int num=13){
 	string output;

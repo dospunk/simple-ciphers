@@ -1,7 +1,7 @@
 #include<string>
 #include"utils.h"
 
-using namespace std;
+using std::string;
 
 string keyword(string str, string key){
 	string alphabet = "abcdefghijklmnopqrstuvwqyz";

@@ -2,7 +2,7 @@
 
 #include<string>
 
-using namespace std;
+using std::string;
 
 string morse(string str){
 	string alpha = "abcdefghijklmnopqrstuvwqyz .-/";

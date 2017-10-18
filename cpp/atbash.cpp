@@ -1,6 +1,6 @@
 #include<string>
 
-using namespace std;
+using std::string;
 
 string atbash(string str){
 	string output;
