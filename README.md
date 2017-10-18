@@ -1,13 +1,19 @@
 # simple-ciphers
 Implementations of simple ciphers in multiple languages
 
-## C++
+## Ciphers
 
 - Atbash
+	- C++
+		- encoder
 - Rot-n
+	- C++
+		- encoder
+	- Rust
+		- encoder
 - Morse Code
+	- C++
+		- encoder
 - Keyword Cipher
-
-## Rust
-
-- Rot-n
+	- C++
+		- encoder
