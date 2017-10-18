@@ -6,6 +6,7 @@ Implementations of simple ciphers in multiple languages
 - Atbash
 	- C++
 		- encoder
+		- decoder
 - Rot-n
 	- C++
 		- encoder

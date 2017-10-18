@@ -16,3 +16,8 @@ string atbash::encode(string str){
 	}
 	return output;
 }
+
+//this isn't even really necessary tbh
+string atbash::decode(string str){
+	return atbash::encode(str);
+}
