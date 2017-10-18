@@ -1,10 +1,11 @@
 all:
 	cd cpp && make
-	cd rust && cargo build
+	cd rust/ciphers && cargo build
 
 test:
 	cd cpp && make run
-	cd rust && cargo test
+	cd rust/ciphers && cargo test
 
 clean:
 	cd cpp && make clean
+	cd rust/ciphers && cargo clean
