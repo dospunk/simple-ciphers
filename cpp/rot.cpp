@@ -2,7 +2,7 @@
 
 using std::string;
 
-string rot(string str, int num=13){
+string rot::encode(string str, int num=13){
 	string output;
 	string::iterator iter;
 	for(iter = str.begin(); iter < str.end(); ++iter){

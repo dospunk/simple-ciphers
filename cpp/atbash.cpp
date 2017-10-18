@@ -2,7 +2,7 @@
 
 using std::string;
 
-string atbash(string str){
+string atbash::encode(string str){
 	string output;
 	string::iterator iter;
 	for(iter = str.begin(); iter < str.end(); ++iter){

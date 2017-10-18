@@ -3,7 +3,7 @@
 
 using std::string;
 
-string keyword(string str, string key){
+string keyword::encode(string str, string key){
 	string alphabet = "abcdefghijklmnopqrstuvwqyz";
 	key = lowerString(key);
 	key = removeDuplicates(key);

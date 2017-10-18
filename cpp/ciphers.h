@@ -2,11 +2,20 @@
 #define CIPHERS_H
 #include<string>
 
-std::string atbash(std::string str);
+namespace atbash{
+	std::string encode(std::string str);
+}
 
-std::string rot(std::string str, int num=13);
+namespace rot{
+	std::string encode(std::string str, int num=13);
+}
 
-std::string morse(std::string str);
+namespace morse{
+	std::string encode(std::string str);
+}
 
-std::string keyword(std::string str, std::string key);
+namespace keyword{
+	std::string encode(std::string str, std::string key);
+}
+
 #endif

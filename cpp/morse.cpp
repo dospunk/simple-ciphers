@@ -4,7 +4,7 @@
 
 using std::string;
 
-string morse(string str){
+string morse::encode(string str){
 	string alpha = "abcdefghijklmnopqrstuvwqyz .-/";
 	string morse[] = {".-","-...","-.-.","-..", ".", "..-.", "--.", "....",
 					  "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.",
