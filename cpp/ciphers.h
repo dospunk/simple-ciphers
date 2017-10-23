@@ -18,6 +18,7 @@ namespace morse{
 
 namespace keyword{
 	std::string encode(std::string str, std::string key);
+	std::string decode(std::string str, std::string key);
 }
 
 #endif
