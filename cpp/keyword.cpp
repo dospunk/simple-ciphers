@@ -1,4 +1,5 @@
 #include<string>
+#include "ciphers.h"
 #include"utils.h"
 
 using std::string;

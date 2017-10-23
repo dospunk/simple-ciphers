@@ -1,6 +1,7 @@
 //Many thanks to http://www.dreamincode.net/forums/topic/155153-morse-code-translator/
 
 #include<string>
+#include "ciphers.h"
 
 using std::string;
 
