@@ -10,6 +10,7 @@ Implementations of simple ciphers in multiple languages
 - Rot-n
 	- C++
 		- encoder
+		- decoder
 	- Rust
 		- encoder
 - Morse Code
@@ -18,3 +19,4 @@ Implementations of simple ciphers in multiple languages
 - Keyword Cipher
 	- C++
 		- encoder
+		- decoder
