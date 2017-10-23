@@ -20,32 +20,34 @@ int main() {
 		#endif
 	}
 	{//test atbash
-		assert(atbash("He<l0l|o") == "Sv<o0o|l");
+		assert(atbash::encode("He<l0l|o") == "Sv<o0o|l");
 		#ifdef NDEBUG
-			cout << "Atbash: He<l0l|o -> " << atbash("He<l0l|o") << endl;
+			cout << "Atbash: He<l0l|o -> " << atbash::encode("He<l0l|o") << endl;
 		#endif
 	}
 	{//test rot-n
-		assert(rot("[Hello", 1) == "[Ifmmp");
-		assert(rot("Hel.lo", 7) == "Ols.sv");
-		assert(rot("H-e-l-l-o") == "U-r-y-y-b");
+		assert(rot::encode("[Hello", 1) == "[Ifmmp");
+		assert(rot::encode("Hel.lo", 7) == "Ols.sv");
+		assert(rot::encode("H-e-l-l-o") == "U-r-y-y-b");
+		assert(rot::encode("asdfghjkl", 4) == "ewhjklnop");
 		#ifdef NDEBUG
-			cout << "Rot1: [Hello -> " << rot("[Hello", 1) << endl;
-			cout << "Rot7: Hel.lo -> " << rot("Hel.lo", 7) << endl;
-			cout << "Rot13: H-e-l-l-o -> " << rot("H-e-l-l-o") << endl;
+			cout << "Rot1: [Hello -> " << rot::encode("[Hello", 1) << endl;
+			cout << "Rot7: Hel.lo -> " << rot::encode("Hel.lo", 7) << endl;
+			cout << "Rot13: H-e-l-l-o -> " << rot::encode("H-e-l-l-o") << endl;
+			cout << "Rot4: asdfghjkl -> " << rot::encode("asdfghjkl", 4) << endl;
 		#endif
 	}
 	{//test morse
-		assert(morse("Whoa .-/") == ".-- .... --- .- / period dash forwardslash ");
+		assert(morse::encode("Whoa .-/") == ".-- .... --- .- / period dash forwardslash ");
 		#ifdef NDEBUG
-			cout << "Morse Code: 'Whoa .-/' -> " << morse("Whoa .-/") << endl;
+			cout << "Morse Code: 'Whoa .-/' -> " << morse::encode("Whoa .-/") << endl;
 		#endif
 	}
 	{//test keyword
-		assert(keyword("s7eeeeeecret", "bestKey") == "p7kkkkkksokq");
+		assert(keyword::encode("s7eeeeeecret", "bestKey") == "p7kkkkkksokq");
 		#ifdef NDEBUG
 			cout << "Keyword Cipher: 's7eeeeeecret' with keyword 'bestKey' -> "
-			     << keyword("s7eeeeeecret", "bestkey") << endl;
+			     << keyword::encode("s7eeeeeecret", "bestkey") << endl;
 		#endif
 	}
 
