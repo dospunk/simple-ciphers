@@ -22,3 +22,6 @@ Implementations of simple ciphers in multiple languages
 	- C++
 		- encoder
 		- decoder
+- RailFence
+	- C++
+		- encoder
