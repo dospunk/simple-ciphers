@@ -21,4 +21,8 @@ namespace keyword{
 	std::string decode(std::string str, std::string key);
 }
 
+namespace railfence{
+	std::string encode(std::string str, int rails=3, int offset=0);
+}
+
 #endif
