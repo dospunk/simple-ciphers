@@ -7,6 +7,8 @@ Implementations of simple ciphers in multiple languages
 	- C++
 		- encoder
 		- decoder
+	- Kotlin
+		- encoder
 - Rot-n
 	- C++
 		- encoder
